@@ -30,7 +30,10 @@ carregarProdutos();
 
 // Rota GET para listar os produtos
 app.get('/produtos', (req, res) => {
+
+    res.send('==========================================================');
     res.json(produtos);
+    res.send('==========================================================');
 });
 
 // Rota POST para adicionar um novo produto

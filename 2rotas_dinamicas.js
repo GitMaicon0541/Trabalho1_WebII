@@ -5,7 +5,9 @@ const app = express();
 // Rota dinâmica que captura o nome do usuário
 app.get('/saudacao/:maicon', (req, res) => {
     const nomeUsuario = req.params.nome; // Captura o parâmetro 'nome' da URL
+    res.send('======================================================');
     res.send(`Olá, ${nomeUsuario}! Seja bem-vindo ao nosso servidor!`);
+    res.send('======================================================');
 });
 
 // Configurar o servidor para rodar na porta 3000

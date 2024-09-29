@@ -7,12 +7,14 @@ const app = express();
 app.use(express.json());
 
 // Lista de usuários (exemplo inicial)
+res.send('==========================================================');
 let usuarios = [
+    
     { id: 1, nome: 'João Luiz', email: 'joaol@gmail.com', senha: 'jl0505' },
     { id: 2, nome: 'Rita de Cassia', email: 'rc@hotmail.com.com', senha: 'rc1298' },
     { id: 3, nome: 'Max', email: 'max@gmail.com', senha: '1010101' },
 ];
-
+res.send('==========================================================');
 // Rota GET para listar os usuários com quebras de linha
 app.get('/usuarios', (req, res, next) => {
     try {

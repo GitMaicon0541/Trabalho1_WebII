@@ -4,7 +4,9 @@ const app = express();
 
 // Definir rota GET para "/"
 app.get('/', (req, res) => {
+    res.send('=========================================');
     res.send('Seja Bem-vindo ao meu servidor Express!!!');
+    res.send('=========================================');
 });
 
 // Configurar o servidor para rodar na porta 3000
@@ -15,6 +17,7 @@ app.listen(PORT, () => {
 
 //Comando 
 //sudo node app.js
+//http://localhost:3000
 
 //======================================================
 //======================================================

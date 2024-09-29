@@ -12,7 +12,9 @@ const autenticar = (req, res, next) => {
     } else {
         // Modificação: permite acesso para testar no navegador
         console.log('Maicon_0541');
+        res.send('==========================================================');
         res.send('Acesso permitido com token = Maicon_0541, sem erro 401 !!!');
+        res.send('==========================================================');
         // Para manter o erro 401 no navegador, descomente a linha abaixo:
         // res.status(401).send('Erro 401: Não autorizado. Token não fornecido.');
     }

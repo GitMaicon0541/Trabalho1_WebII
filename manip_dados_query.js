@@ -3,12 +3,14 @@ const express = require('express');
 const app = express();
 
 // Lista de produtos (exemplo)
+res.send('==========================================================');
 const produtos = [
     { id: 1, nome: 'Camiseta', categoria: 'Roupas', preco: 49.90 },
     { id: 2, nome: 'Tênis', categoria: 'Calçados', preco: 199.90 },
     { id: 3, nome: 'Relógio', categoria: 'Acessórios', preco: 150.00 },
     { id: 4, nome: 'Boné', categoria: 'Roupas', preco: 29.90 },
 ];
+res.send('==========================================================');
 
 // Rota que manipula query params para filtrar produtos
 app.get('/produtos', (req, res) => {

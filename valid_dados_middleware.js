@@ -7,10 +7,12 @@ const valid_dados_middleware = express();
 valid_dados_middleware.use(express.json());
 
 // Lista de usuários
+res.send('==========================================================');
 let usuarios = [
     { id: 1, nome: 'João', email: 'joao@example.com', senha: '123456' },
     { id: 2, nome: 'Maria', email: 'maria@example.com', senha: 'abcdef' },
 ];
+res.send('==========================================================');
 
 // Rota GET para listar os usuários com quebras de linha
 valid_dados_middleware.get('/usuarios', (req, res) => {
